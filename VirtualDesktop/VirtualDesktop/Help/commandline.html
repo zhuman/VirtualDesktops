@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "Templates/MainTemplate.dwt" -->
+
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type" />
+<!-- #BeginEditable "doctitle" -->
+<title>Command Line Options</title>
+<!-- #EndEditable -->
+<!-- #BeginEditable "head" -->
+<!-- #EndEditable -->
+<style type="text/css">
+<!--
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Lucida Sans Unicode, Lucida, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	background-attachment: fixed;
+	background-position: right bottom;
+	background-image: url(/Main%20Icon%20128.png);
+	background-repeat: no-repeat;
+	padding: 0.5em;
+	line-height: 1.5em;
+}
+a {
+	color: #868686;
+	text-decoration: underline;
+}
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+h2 {
+	font-size: 16px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+h1 {
+	border: 1px solid #333;
+	background-color: #777;
+	padding: 10px;
+	color: #F2F2F2;
+	font-size: 1.5em;
+}
+#footer {
+	font-size: smaller;
+	clear: both;
+}
+img {
+	margin: 15px;
+	border: 5px #ccc solid;
+}
+#notice {
+	font-size: smaller;
+}
+p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	list-style-position: outside;
+	margin-left: 3em;
+}
+-->
+</style>
+</head>
+
+<body>
+
+	<h1>
+		<!-- #BeginEditable "HeadRegion" -->Command Line Options<!-- #EndEditable -->
+	</h1>
+	<!--<div id="notice"><p>NOTICE This is prerelease information and is subject to change before release.</p></div>-->
+	<!-- #BeginEditable "BodyRegion" -->
+	<p>
+		Vista/XP Virtual Desktops accepts a number of command line arguments in 
+		order to allow its use in scripts and shortcuts. It is recommended to start 
+		Finestra before using command line arguments (or to just let it start automatically 
+		without command line arguments).
+	</p>
+	<p>
+		<strong>/switcher</strong>
+	</p>
+	<p>
+		Opens the switcher.
+	</p>
+	<p>
+		<strong>/desk:&lt;desktop name or number&gt;</strong>
+	</p>
+	<p>
+		Switches to the given desktop. Note that desktop numbers start at 1 and 
+		that if the desktop name has a space in it, the entire option must be enclosed 
+		in quotations. For example:
+	</p>
+	<ul>
+		<li>&quot;Virtual Desktops.exe&quot; &quot;/desk:A Long Desktop Name with 
+		Spaces&quot;</li>
+		<li>&quot;Virtual Desktops.exe&quot; /desk:2 </li>
+	</ul>
+	<p>
+		<strong>&lt;desktop name or number&gt;:&lt;program or process ID&gt;</strong>
+	</p>
+	<p>
+		Opens a program onto the specified desktop or forces a currently open program 
+		onto the specified desktop. Once again, if the program name or the desktop 
+		name has spaces, the entire option must be enclosed in quotes. To stop forcing 
+		a program to a desktop, simply use 0 as the desktop number. For example:
+	</p>
+	<ul>
+		<li>&quot;Virtual Desktops.exe&quot; 2:notepad.exe</li>
+		<li>&quot;Virtual Desktops.exe&quot; Work:word.exe</li>
+		<li>&quot;Virtual Desktops.exe&quot; &quot;Development:my program.exe&quot;</li>
+	</ul>
+	<!-- #EndEditable -->
+	<div id="footer">
+		<p>
+			Finestra Virtual Desktops - Version 1.0<br />
+			Copyright © 2011 Z-Systems
+		</p>
+	</div>
+
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?include "Config.wxi" ?>
+<!--
+-Previous Product IDs-
+
+0.9.1.0 - F4735C64-9A74-4e48-894B-1CA5D83B99C8
+0.9.0.0 - 176190EF-2826-4806-A043-ABE6065175AF
+0.8.3018.0 - 992CD599-0E5A-41fa-89E3-063501954016
+0.8.3017.23608 - 1E5D9D93-0CC7-425f-B2EE-172DD00D614A
+0.8.0.0 - 300A5BE8-9D26-4694-99AD-9B0EDA9CEF99
+0.7.0.0 - 25E7D95F-6DED-446d-9628-6C38AF90657D
+0.6.0.0 - DC01172F-9A5A-477c-BFFA-F363AF819A60
+0.5.0.0 - 4F3022AA-89CA-4d7c-A13C-C089AFEF50BC
+0.4.1.0 - DA7D535D-8BB9-4adc-A30D-F7ADF40BB028
+0.4.0.0 - 37A5E86F-D45A-4e76-B4D6-40986EDDA319
+0.3.0.0 - 604539C9-7E84-4636-A077-1E27C64351F5
+0.2.0.0 - 19DF213E-E7DC-40d3-BD07-6F0839BAEF04
+0.1.0.0 - F13B53A4-4207-465d-8DA5-64FB7FFCA43B
+
+Update Code - BC64D2E5-D442-4971-90CB-DA0A5C816B02 - DON'T CHANGE THIS
+-->
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Manufacturer="Z-Systems" Language="1033" UpgradeCode="BC64D2E5-D442-4971-90CB-DA0A5C816B02"
+			 Version="$(var.Version)" Name="Finestra Virtual Desktops">
+		<Package Compressed="yes" InstallerVersion="300" Id="*" Description="A virtual desktop manager that takes advantage of Windows' new live window thumbnails." Manufacturer="Z-Systems" Languages="1033" Keywords="virtual desktops manager"/>
+
+		<PropertyRef Id="NETFRAMEWORK40CLIENT"/>
+		<Condition Message="The .NET Framework 4.0 Client Runtime must be installed.">
+			<![CDATA[NETFRAMEWORK40CLIENT]]>
+		</Condition>
+
+		<MajorUpgrade AllowDowngrades="no" DowngradeErrorMessage="A newer version of Finestra is already installed." Schedule="afterInstallFinalize" MigrateFeatures="no" />
+
+		<MediaTemplate CompressionLevel='high' EmbedCab='yes' />
+
+		<Directory Id='TARGETDIR' Name='SourceDir' DiskId='1'>
+			<Directory Id='ProgramFilesFolder' Name='PFiles'>
+				<Directory Id='APPLICATIONFOLDER' Name='Finestra'>
+
+					<Merge Id='VC10RedistMerge' SourceFile='C:\program files (x86)\common files\merge modules\Microsoft_VC100_CRT_x86.msm' Language='1033' FileCompression='yes' />
+
+					<Component Id='mainExeComp' Guid='5CBB7CA4-7E9E-43f4-83AD-A9E3DD7A1CF1'>
+						<File Id='MAINEXE' Source='$(var.VirtualDesktop.TargetDir)VirtualDesktops.exe' KeyPath='yes'>
+							<Shortcut Id='MainStartMenShortcut' Name='Finestra Virtual Desktops' Advertise='yes' Description='Start Finestra Virtual Desktops' Directory='StartMenTarg' Icon='MainIcon.ico' />
+							<Shortcut Id='MainStartupShortcut' Advertise='yes' Name='Finestra Virtual Desktops' Directory='StartupFolder' Description='Start Finestra Virtual Desktops' Icon='MainIcon.ico' />
+						</File>
+						<File Id='configFile' Source='$(var.VirtualDesktop.TargetDir)VirtualDesktops.exe.config' />
+						<RemoveFolder Directory='StartMenTarg' Id='RemStartMenTarg' On='uninstall' />
+					</Component>
+					<Component Id='zpixelComp' Guid='{9C48054B-52B7-4569-B6CF-967B8190EDB1}'>
+						<File Id='zpixelDll' Source='$(var.VirtualDesktop.TargetDir)Z-Pixel.dll' />
+					</Component>
+					<Component Id='slimDxComp' Guid='{04EA38BF-739F-42F2-B88D-9DE80EBCE1C7}'>
+						<File Id='slimDxDll' Source='$(var.VirtualDesktop.TargetDir)SlimDx.dll' />
+					</Component>
+					<Component Id='helpComponent' Guid='E12C2477-59AB-4183-A262-33B72182C948'>
+						<File Id='hlpFile' Source='$(var.VirtualDesktop.TargetDir)VVDM Help.chm' KeyPath='yes'>
+							<Shortcut Id='HelpShortcut' Name='Finestra Help' Directory='StartMenTarg' Advertise='yes' Description='Get help for Finestra Virtual Desktops.' />
+						</File>
+					</Component>
+					<Component Id='winCoreComp' Guid='{957D83B4-95FB-47F2-935F-8AA30BDB9D3D}'>
+						<File Id='winCoreDll' Source='$(var.VirtualDesktop.TargetDir)Microsoft.WindowsAPICodePack.dll' KeyPath='yes' />
+					</Component>
+					<Component Id='winShellComp' Guid='{DE291A8B-8A73-4736-A9CB-9D779532A4DE}'>
+						<File Id='winShellDll' Source='$(var.VirtualDesktop.TargetDir)Microsoft.WindowsAPICodePack.Shell.dll' KeyPath='yes' />
+					</Component>
+					<Component Id='wpfExtComp' Guid='{B5E1CB28-6DDB-4179-87ED-7A5C2D2D3AD2}'>
+						<File Id='wpfExtFll' Source='$(var.VirtualDesktop.TargetDir)WPFToolkit.Extended.dll' />
+					</Component>
+				</Directory>
+			</Directory>
+
+			<Directory Id='ProgramMenuFolder' Name='Prgms'>
+				<Directory Id='StartMenTarg' Name="Finestra Virtual Desktops" />
+			</Directory>
+			<Directory Id='StartupFolder' Name='Startup' />
+		</Directory>
+
+		<Icon Id='MainIcon.ico' SourceFile='Main Icon.ico' />
+
+		<Property Id="ApplicationFolderName" Value="Finestra" />
+		<Property Id="WixAppFolder" Value="WixPerMachineFolder" />
+		<WixVariable Id="WixAppFolder" Value="WixPerMachineFolder" />
+		<WixVariable Id="WixUISupportPerUser" Value="1" />
+		<WixVariable Id="WixUISupportPerMachine" Value="1" />
+		<Property Id="ALLUSERS" Value="1" />
+
+		<UI>
+			<UIRef Id="WixUI_Advanced" />
+		</UI>
+
+		<UI>
+			<UIRef Id="WixUI_Advanced" />
+			<Publish Dialog="ExitDialog"
+					Control="Finish"
+					Event="DoAction"
+					Value="LaunchApplication">WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 and NOT Installed</Publish>
+		</UI>
+		<Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch Finestra" />
+
+		<Property Id="WixShellExecTarget" Value="[#MAINEXE]" />
+		<CustomAction Id="LaunchApplication"
+				BinaryKey="WixCA"
+				DllEntry="WixShellExec"
+				Impersonate="yes" />
+
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+		<WixVariable Id="WixUIBannerBmp" Value="banner.bmp"/>
+		<WixVariable Id="WixUIDialogBmp" Value="dialog.bmp"/>
+
+		<Property Id="ARPPRODUCTICON" Value="MainIcon.ico" />
+		<Property Id="ARPURLINFOABOUT" Value="http://www.z-sys.org/products/vvdm.aspx" />
+
+		<Feature Id='MainFeature' Title='Executables' Level='1' AllowAdvertise='yes' Description='The main program files.' Display='expand' InstallDefault='local' Absent='disallow' >
+			<ComponentRef Id='mainExeComp' />
+			<ComponentRef Id='zpixelComp' />
+			<ComponentRef Id='slimDxComp' />
+			<ComponentRef Id='winCoreComp' />
+			<ComponentRef Id='winShellComp' />
+			<ComponentRef Id='wpfExtComp' />
+			<ComponentRef Id='helpComponent' />
+			<MergeRef Id='VC10RedistMerge' />
+		</Feature>
+	</Product>
+</Wix>

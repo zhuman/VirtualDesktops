@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlreadyRunningError" xml:space="preserve">
+    <value>Finestra Virtual Desktops is already running. You can't run more than one instance of Finestra Virtual Desktops at one time.</value>
+    <comment>The error message shown if a user tries to open a new instance of Finestra.</comment>
+  </data>
+  <data name="AlreadyRunningErrorTitle" xml:space="preserve">
+    <value>Already Running</value>
+    <comment>The title of the AlreadyRunningError window.</comment>
+  </data>
+  <data name="DesktopWord" xml:space="preserve">
+    <value>Desktop</value>
+    <comment>The name for "desktop."</comment>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+    <comment>A generic title for an error window.</comment>
+  </data>
+  <data name="HotkeyInUseError" xml:space="preserve">
+    <value>An error occurred while trying to register a hotkey. It is possible that another program is already using the hotkey.</value>
+    <comment>A prompt shown when a hotkey fails to register.</comment>
+  </data>
+  <data name="OptionsRestartWarning" xml:space="preserve">
+    <value>The application will now restart, causing all windows to move to the current desktop.</value>
+    <comment>The prompt shown when a user changes a setting that requires Finestra to be restarted.</comment>
+  </data>
+  <data name="OptionsRestartWarningTitle" xml:space="preserve">
+    <value>Application Restart</value>
+    <comment>The title of the OptionsRestartWarning prompt window.</comment>
+  </data>
+  <data name="OptionsHelpDesktopRule" xml:space="preserve">
+    <value>In order to aid organization, entire programs can be set to only appear on one desktop. If they try to open onto another desktop, they will be moved automatically to their proper place.</value>
+    <comment>The "Should stay on desktop:" option's help text.</comment>
+  </data>
+  <data name="OptionsHelpMinimizeRule" xml:space="preserve">
+    <value>Some programs don't like to be hidden by virtual desktop programs. In many cases, however, you can fix these issues by adding the program to this list. All windows for these programs will be minimized before being hidden, and will be returned to their normal state when shown again. Most notably, Adobe CS applications should be placed here.</value>
+    <comment>The "Should minimize before hiding" option's help text.</comment>
+  </data>
+  <data name="OptionsHelpRule" xml:space="preserve">
+    <value>Hover over an option for more information.</value>
+  </data>
+  <data name="OptionsHelpStickyRule" xml:space="preserve">
+    <value>Sticky programs are programs that you can set to always appear on all desktops. They are essentially excluded from virtual desktop behavior.</value>
+    <comment>The "Sticky" option's help text.</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Main_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\main icon.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="applications_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\applications_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_forward_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-forward_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finestra128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finestra128.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finestra16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finestra16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finestra256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finestra256.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finestra32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finestra32.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Finestra48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finestra48.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GaussianShadow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GaussianShadow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OptionsHelpRuleList" xml:space="preserve">
+    <value>Add programs using their executable's name, with or without the file extension. You can find process names in Task Manager's process list.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NewFeatures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewFeatures.rtf;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>

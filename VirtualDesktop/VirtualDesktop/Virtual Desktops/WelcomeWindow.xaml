@@ -1,0 +1,48 @@
+﻿<Window x:Class="WelcomeWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d" d:DesignHeight="450"
+		d:DesignWidth="554" FontFamily="Segoe UI" SnapsToDevicePixels="True"
+		UseLayoutRounding="True" Title="Finestra Virtual Desktops" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+			<StackPanel Orientation="Horizontal">
+				<Image Source="..\Resources\Finestra48.png" VerticalAlignment="Center" Stretch="None" Margin="3" />
+				<TextBlock FontFamily="Gabriola" FontSize="35">
+				<Run FontWeight="Bold" FontSize="40">Finestra</Run> Virtual Desktops
+				</TextBlock>
+			</StackPanel>
+			<TextBlock TextWrapping="Wrap" Margin="3">
+				Virtual desktops allows you to double, triple, or further multiply your screen space. Switch between virtual desktops with hotkeys or from the taskbar icon. You can also bring up a fullscreen overview with (Win+Z).
+			</TextBlock>
+			<TextBlock FontSize="20" FontWeight="Bold" Margin="3">Let's get started</TextBlock>
+			<CheckBox Margin="3" ToolTipService.IsEnabled="True">
+				<FrameworkElement.ToolTip>
+					New in 2.2, windows will fly out of view when switching away and fly back in when you come back. It looks cool, but it takes a little longer to switch desktops.
+				</FrameworkElement.ToolTip>
+				Enable window animations (NEW)
+			</CheckBox>
+			<CheckBox Margin="3">Enable mouse-edge switching (NEW)</CheckBox>
+			<CheckBox Margin="3">Enable per-desktop wallpaper</CheckBox>
+			<StackPanel Orientation="Horizontal">
+				<Button Margin="3" Padding="3">Edit Hotkeys</Button>
+				<Button Margin="3" Padding="3">More Options</Button>
+			</StackPanel>
+			<TextBlock FontSize="20" FontWeight="Bold" Margin="3">Donate</TextBlock>
+			<TextBlock Margin="3">Because I created this whole program, and I'm a pretty nice guy.</TextBlock>
+			<TextBlock FontSize="20" FontWeight="Bold" Margin="3">More Information</TextBlock>
+			<TextBlock TextWrapping="Wrap" Margin="3">
+				Check out the <Hyperlink>Z-Systems blog</Hyperlink> for information about upcoming Finestra releases and other software from Z-Systems.
+			</TextBlock>
+		</StackPanel>
+
+	</Grid>
+</Window>

@@ -1,0 +1,3 @@
+<!ELEMENT animation (image+)>
+<!ATTLIST animation compressed (yes|no) "yes">
+<!ELEMENT image (#PCDATA)>

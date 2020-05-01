@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02DC2BB3-F426-4AE5-A6E7-993862F9DA89}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sub Main</StartupObject>
+    <RootNamespace>Finestra</RootNamespace>
+    <AssemblyName>VirtualDesktops</AssemblyName>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <ApplicationIcon>Main Icon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VirtualDesktops.xml</DocumentationFile>
+    <NoWarn>41999,42016</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VirtualDesktops.xml</DocumentationFile>
+    <NoWarn>41999,42016</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>VirtualDesktops.xml</DocumentationFile>
+    <NoWarn>41999,42016</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Virtual Desktops.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</WarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>VirtualDesktops.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Virtual Desktops.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <WarningsAsErrors>42017,42018,42019,42020,42021,42022,42030,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</WarningsAsErrors>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit.Extended, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Virtual Desktops\AboutBox.Designer.vb">
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\AutoRecoverPlugin.vb" />
+    <Compile Include="Virtual Desktops\CommandListener.vb" />
+    <Compile Include="Virtual Desktops\AeroMiniPreviewWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\DesktopIconsPlugin.vb" />
+    <Compile Include="Virtual Desktops\DoubleBufferedForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\HotkeyControl.xaml.vb">
+      <DependentUpon>HotkeyControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\IconToolbar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\Main.vb" />
+    <Compile Include="Virtual Desktops\MiniPreviewWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\MouseEdgeSwitcher.vb" />
+    <Compile Include="Virtual Desktops\MainUiPlugin.vb" />
+    <Compile Include="Virtual Desktops\OptionsWindow.xaml.vb">
+      <DependentUpon>OptionsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\RecoverForm.Designer.vb">
+      <DependentUpon>RecoverForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\RecoverForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\TaskbarSwitcher.vb" />
+    <Compile Include="Virtual Desktops\ThumbnailToolForm.Designer.vb">
+      <DependentUpon>ThumbnailToolForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\ThumbnailToolForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\UpdatesForm.Designer.vb">
+      <DependentUpon>UpdatesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\UpdatesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\Utilities.vb" />
+    <Compile Include="Virtual Desktops\VirtualDesktopPlugin.vb" />
+    <Compile Include="Virtual Desktops\WelcomeForm.Designer.vb">
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\WelcomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\WelcomeWindow.xaml.vb">
+      <DependentUpon>WelcomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\WelcomeWizard.Designer.vb">
+      <DependentUpon>WelcomeWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Desktops\WelcomeWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\WindowAnimationPlugin.vb" />
+    <Compile Include="Virtual Desktops\WindowWatcher.vb" />
+    <Compile Include="Win32\Desktop.vb" />
+    <Compile Include="Win32\GlassForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win32\RegistryUtils.vb" />
+    <Compile Include="Win32\ShellEvents.vb" />
+    <Compile Include="Virtual Desktops\SwitchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win32\HotKey.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Win32\NativeWindowEx.vb" />
+    <Compile Include="Win32\Thumbnail.vb" />
+    <Compile Include="Virtual Desktops\ThumbnailManager.vb" />
+    <Compile Include="Virtual Desktops\ThumbnailWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Virtual Desktops\VirtualDesktops.vb" />
+    <Compile Include="Win32\WindowInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Virtual Desktops\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\IconToolbar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IconToolbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\RecoverForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RecoverForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\ThumbnailToolForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThumbnailToolForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\UpdatesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdatesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\WelcomeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WelcomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Virtual Desktops\WelcomeWizard.resx">
+      <DependentUpon>WelcomeWizard.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\NewFeatures.rtf" />
+    <None Include="VVDM Help.chm">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main Icon.ico" />
+    <Resource Include="Resources\Main Icon.ico" />
+    <Content Include="WPFToolkit.Extended.dll" />
+    <Resource Include="Resources\GaussianShadow.png" />
+    <Resource Include="Resources\Finestra128.png" />
+    <Resource Include="Resources\applications_16.png" />
+    <Resource Include="Resources\arrow-forward_16.png" />
+    <Resource Include="Resources\Help.png" />
+    <Resource Include="Resources\Finestra256.png" />
+    <Resource Include="Resources\Finestra48.png" />
+    <Resource Include="Resources\Finestra32.png" />
+    <Resource Include="Resources\Finestra16.png" />
+    <Resource Include="Resources\Splash.png" />
+    <None Include="Help\Project\Index.hhk" />
+    <None Include="Help\Project\Table of Contents.hhc" />
+    <None Include="Help\Project\VVDM Help.chm">
+    </None>
+    <None Include="Help\Project\VVDM Help.hhp" />
+    <None Include="Help\Templates\MainTemplate.dwt" />
+    <Content Include="Help\images.html" />
+    <Content Include="Help\Main Icon 128.png" />
+    <Content Include="Help\main.html" />
+    <Content Include="Help\Screen1small.jpg" />
+    <Content Include="Help\shortcuts.html" />
+    <Content Include="Help\switcher.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Z-Pixel\Z-Pixel\Z-Pixel.vbproj">
+      <Project>{4bd4c78e-b084-4fb7-b3f7-8211c3291ba3}</Project>
+      <Name>Z-Pixel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{2E1FB0DF-F9BB-4909-9F32-2D9D022A8E57}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shell\Shell.csproj">
+      <Project>{AA0C00CB-8699-4F37-BFAE-40CA87ACC06D}</Project>
+      <Name>Shell</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Application.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <Page Include="Virtual Desktops\HotkeyControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Virtual Desktops\OptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Virtual Desktops\WelcomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+			 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>

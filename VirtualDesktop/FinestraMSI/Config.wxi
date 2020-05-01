@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+	<!--
+		Defines the version of the package that will be created.
+	-->
+	<?define Version = "2.5.9.0" ?>
+</Include>

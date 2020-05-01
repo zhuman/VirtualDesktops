@@ -1,0 +1,27 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=VVDM Help.chm
+Contents file=Table of Contents.hhc
+Default Window=MainWindow
+Default topic=..\main.html
+Display compile progress=Yes
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Finestra Virtual Desktops Help
+
+[WINDOWS]
+MainWindow="Finestra Virtual Desktops Help","Table of Contents.hhc","Index.hhk","..\main.html","..\main.html",,,,,0x2520,,0x3006,,0x1000000,,,,,,0
+
+
+[FILES]
+..\main.html
+..\shortcuts.html
+..\images.html
+..\switcher.html
+..\winmenu.html
+..\minitoolbar.html
+..\commandline.html
+
+[INFOTYPES]
+

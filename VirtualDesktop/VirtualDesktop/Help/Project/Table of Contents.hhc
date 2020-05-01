@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Finestra Virtual Desktops">
+		<param name="Local" value="..\main.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shortcut Keys">
+		<param name="Local" value="..\shortcuts.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Command Line Options">
+		<param name="Local" value="..\commandline.html">
+		<param name="New" value="1">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="The Switcher">
+		<param name="Local" value="..\switcher.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Window Menus">
+		<param name="Local" value="..\winmenu.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Mini-Toolbar">
+		<param name="Local" value="..\minitoolbar.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>
