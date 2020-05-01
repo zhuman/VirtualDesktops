@@ -1,5 +1,7 @@
 # Finestra Virtual Desktops
 
+> NOTE: This project is archived from 2012. It is not being actively developed.
+
 ![Screenshot 1](wiki/Screen1small.jpg)
 
 [More Screenshots](wiki/Screenshots.md)
