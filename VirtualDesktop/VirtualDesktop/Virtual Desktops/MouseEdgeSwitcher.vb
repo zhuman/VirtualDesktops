@@ -1,4 +1,4 @@
-Imports SlimDX.RawInput
+Imports SharpDX.RawInput
 Imports ZPixel
 
 ''' <summary>
@@ -73,7 +73,7 @@ Public Class MouseEdgeSwitcher
 			timingTimer.Interval = 10
 
 			AddHandler Device.MouseInput, AddressOf Device_MouseInput
-			Device.RegisterDevice(SlimDX.Multimedia.UsagePage.Generic, SlimDX.Multimedia.UsageId.Mouse, DeviceFlags.InputSink, w.Handle)
+			Device.RegisterDevice(SharpDX.Multimedia.UsagePage.Generic, SharpDX.Multimedia.UsageId.GenericMouse, DeviceFlags.InputSink, w.Handle)
 
 			mouseTimer.Interval = 500
 			mouseTimer.Enabled = True
